@@ -38,6 +38,12 @@
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1</eggCountRange>
 			</li>
+			<li Class="AEXPAnimalBehaviours.CompProperties_DigWhenHungry">
+
+				<customThingToDig>AEXP_RawFish</customThingToDig>
+				<customAmountToDig>15</customAmountToDig>
+
+			</li>
 		</comps>
 		<tools>
 			<li>
