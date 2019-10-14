@@ -105,17 +105,17 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Penguin/PenguinBaby</texPath>
-					<drawSize>1.1</drawSize>
+					<drawSize>1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Penguin/Dessicated_Penguin</texPath>
-					<drawSize>1.1</drawSize>
+					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Penguin/Penguin</texPath>
-					<drawSize>1.4</drawSize>
+					<drawSize>1.2</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.3, 0.3)</volume>
 						<offset>(0,0,-0.3)</offset>
@@ -123,13 +123,13 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Penguin/Dessicated_Penguin</texPath>
-					<drawSize>1.4</drawSize>
+					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Penguin/Penguin</texPath>
-					<drawSize>1.8</drawSize>
+					<drawSize>1.4</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
 						<offset>(0,0,-0.2)</offset>
@@ -137,7 +137,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Penguin/Dessicated_Penguin</texPath>
-					<drawSize>1.8</drawSize>
+					<drawSize>1.4</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -338,7 +338,7 @@
 			<baseBodySize>3.6</baseBodySize>
 			<baseHungerRate>0.23</baseHungerRate>
 			<baseHealthScale>3.2</baseHealthScale>
-			<foodType>Carnivore</foodType>
+			<foodType>CarnivoreAnimal</foodType>
 			<useMeatFrom>AEXP_Seal</useMeatFrom>
 			<leatherDef>AEXP_Leather_Pinniped</leatherDef>
 			<wildness>0.85</wildness>

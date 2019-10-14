@@ -14,7 +14,7 @@
     <label>penguin egg (fert.)</label>
     <description>A fertilized penguin egg. If all goes well, it should hatch into a baby penguin. It can be eaten raw, but it's much better cooked.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/AnimalProductRaw/EggSmall</texPath>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
       <color>(182,205,161)</color>
       <drawSize>1</drawSize>
     </graphicData>
