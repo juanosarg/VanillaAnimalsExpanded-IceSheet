@@ -2,7 +2,7 @@
 <Defs>
 
 	<!-- ======================= Penguin =============================== -->
-	<ThingDef ParentName="BigBirdThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>AEXP_Penguin</defName>
 		<label>penguin</label>
 		<description>An aquatic, flightless bird, only found in arctic regions. Often seen in massive flocks, penguins are fierce when cornered, and can quickly overrun any hunter incompetent enough to get close to them.</description>
@@ -12,39 +12,6 @@
 			<ComfyTemperatureMin>-60</ComfyTemperatureMin>
 			<ComfyTemperatureMax>20</ComfyTemperatureMax>
 		</statBases>
-		<race>
-			<herdAnimal>true</herdAnimal>
-			<baseBodySize>0.8</baseBodySize>
-			<baseHealthScale>0.8</baseHealthScale>
-			<baseHungerRate>0.10</baseHungerRate>
-			<foodType>CarnivoreAnimal</foodType>
-			<wildness>0.70</wildness>
-			<lifeExpectancy>50</lifeExpectancy>
-			<useMeatFrom>Cassowary</useMeatFrom>
-			<manhunterOnTameFailChance>0.16</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>0.22</manhunterOnDamageChance>
-			<wildBiomes>
-				<BorealForest>0.03</BorealForest>
-				<Tundra>0.3</Tundra>
-				<ColdBog>0.3</ColdBog>
-				<IceSheet>1</IceSheet>
-			</wildBiomes>
-		</race>
-		<comps>
-			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>AEXP_EggPenguinFertilized</eggFertilizedDef>
-				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>15</eggLayIntervalDays>
-				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-				<eggCountRange>1</eggCountRange>
-			</li>
-			<li Class="AEXPAnimalBehaviours.CompProperties_DigWhenHungry">
-
-				<customThingToDig>AEXP_RawFish</customThingToDig>
-				<customAmountToDig>15</customAmountToDig>
-
-			</li>
-		</comps>
 		<tools>
 			<li>
 				<label>claws</label>
@@ -92,6 +59,63 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>AEXP_EggPenguinFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>15</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+			<li Class="AEXPAnimalBehaviours.CompProperties_DigWhenHungry">
+
+				<customThingToDig>AEXP_RawFish</customThingToDig>
+				<customAmountToDig>15</customAmountToDig>
+
+			</li>
+		</comps>
+		<race>
+			<body>Bird</body>
+			<leatherDef>Leather_Bird</leatherDef>
+			<gestationPeriodDays>24</gestationPeriodDays>
+			<herdAnimal>true</herdAnimal>
+			<baseBodySize>0.8</baseBodySize>
+			<baseHealthScale>0.8</baseHealthScale>
+			<baseHungerRate>0.10</baseHungerRate>
+			<foodType>CarnivoreAnimal</foodType>
+			<wildness>0.70</wildness>
+			<lifeExpectancy>50</lifeExpectancy>
+			<useMeatFrom>Cassowary</useMeatFrom>
+			<manhunterOnTameFailChance>0.16</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.22</manhunterOnDamageChance>
+			<wildBiomes>
+				<BorealForest>0.03</BorealForest>
+				<Tundra>0.3</Tundra>
+				<ColdBog>0.3</ColdBog>
+				<IceSheet>1</IceSheet>
+			</wildBiomes>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBabyTiny</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.22</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.45</minAge>
+					<soundWounded>AEXP_Pawn_Penguin_Wounded</soundWounded>
+					<soundDeath>AEXP_Pawn_Penguin_Death</soundDeath>
+					<soundCall>AEXP_Pawn_Penguin_Call</soundCall>
+					<soundAngry>AEXP_Pawn_Penguin_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>		
 		<tradeTags>
 			<li>AnimalUncommon</li>
 		</tradeTags>
@@ -240,10 +264,10 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.4</minAge>
-					<soundWounded>Pawn_Alphabeaver_Wounded</soundWounded>
-					<soundDeath>Pawn_Alphabeaver_Death</soundDeath>
-					<soundCall>Pawn_Alphabeaver_Call</soundCall>
-					<soundAngry>Pawn_Alphabeaver_Angry</soundAngry>
+					<soundWounded>AEXP_Pawn_Seal_Wounded</soundWounded>
+					<soundDeath>AEXP_Pawn_Seal_Death</soundDeath>
+					<soundCall>AEXP_Pawn_Seal_Call</soundCall>
+					<soundAngry>AEXP_Pawn_Seal_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
@@ -375,10 +399,10 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.4</minAge>
-					<soundWounded>Pawn_Alphabeaver_Wounded</soundWounded>
-					<soundDeath>Pawn_Alphabeaver_Death</soundDeath>
-					<soundCall>Pawn_Alphabeaver_Call</soundCall>
-					<soundAngry>Pawn_Alphabeaver_Angry</soundAngry>
+					<soundWounded>AEXP_Pawn_Walrus_Wounded</soundWounded>
+					<soundDeath>AEXP_Pawn_Walrus_Death</soundDeath>
+					<soundCall>AEXP_Pawn_Walrus_Call</soundCall>
+					<soundAngry>AEXP_Pawn_Walrus_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
