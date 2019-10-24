@@ -11,9 +11,9 @@
 			<color>(112,82,65)</color>
 		</graphicData>
 		<statBases>
-			<MarketValue>5.50</MarketValue>
+			<MarketValue>4.50</MarketValue>
 			<StuffPower_Armor_Sharp>0.93</StuffPower_Armor_Sharp>
-			<StuffPower_Insulation_Heat>25</StuffPower_Insulation_Heat>
+			<StuffPower_Insulation_Cold>25</StuffPower_Insulation_Cold>
 		</statBases>
 		<stuffProps>
 			<color>(112,82,65)</color>

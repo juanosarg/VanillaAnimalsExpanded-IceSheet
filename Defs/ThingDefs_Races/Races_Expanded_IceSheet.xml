@@ -70,7 +70,7 @@
 			<li Class="AEXPAnimalBehaviours.CompProperties_DigWhenHungry">
 
 				<customThingToDig>AEXP_RawFish</customThingToDig>
-				<customAmountToDig>15</customAmountToDig>
+				<customAmountToDig>10</customAmountToDig>
 
 			</li>
 		</comps>
@@ -89,9 +89,7 @@
 			<manhunterOnTameFailChance>0.16</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.22</manhunterOnDamageChance>
 			<wildBiomes>
-				<BorealForest>0.03</BorealForest>
-				<Tundra>0.3</Tundra>
-				<ColdBog>0.3</ColdBog>
+				<SeaIce>0.3</SeaIce>
 				<IceSheet>1</IceSheet>
 			</wildBiomes>
 			<lifeStageAges>
@@ -444,7 +442,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Walrus/Walrus</texPath>
-					<drawSize>2.0</drawSize>
+					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.35, 0.4, 0.3)</volume>
 						<offset>(0,0,-0.08)</offset>
@@ -452,7 +450,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Walrus/Dessicated_Walrus</texPath>
-					<drawSize>2.0</drawSize>
+					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 				<butcherBodyPart>
 					<bodyPartGroup>TuskAttackTool</bodyPartGroup>
